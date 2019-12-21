@@ -29,6 +29,7 @@ body {
 }
 
 .btn {
+  user-select: none;
   padding: 23px 38px;
   border: 1px solid transparent;
   border-radius: 50px;
