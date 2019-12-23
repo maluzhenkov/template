@@ -218,24 +218,34 @@ body {
       bottom: 50px;
       list-style: none;
       li button {
+        position: relative;
         appearance: none;
         display: block;
         line-height: 0;
         overflow: hidden;
-        margin: 6px 8px;
-        padding: 0;
+        margin: 0 8px;
         font-size: 0;
-        height: 1px;
+        height: 12px;
         width: 16px;
         border: none;
-        background-color: rgba($white, 0.3);
+        background-color: transparent;
         outline: none;
         cursor: pointer;
-        &:hover {
+        &:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba($white, 0.3);
+        }
+        &:hover:after {
           box-shadow: 0px 0px 5px $white;
         }
       }
-      .slick-active button {
+      .slick-active button:after {
         background-color: $white;
       }
     }
