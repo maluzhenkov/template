@@ -8,15 +8,18 @@
 }
 
 body {
-  font-family: "Calibri", sans-serif;
+  font-family: "CeraRoundPro", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: $text-blue;
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1130px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container-fluid {
   max-width: 1520px;
@@ -26,9 +29,11 @@ body {
 .title {
   font-size: 36px;
   line-height: 54px;
+  font-weight: 500;
 }
 
 .btn {
+  display: inline-block;
   user-select: none;
   padding: 23px 38px;
   border: 1px solid transparent;
@@ -44,7 +49,6 @@ body {
     background: rgba($white, 0.2);
   }
 }
-
 .btn-outline {
   border: 1px solid rgba($white, 0.2);
   transition: border 0.1s ease;
@@ -52,7 +56,6 @@ body {
     border: 1px solid transparent;
   }
 }
-
 .btn-bg-red {
   background: $red;
   &:hover {
@@ -104,6 +107,7 @@ body {
       min-width: 360px;
       font-size: 14px;
       line-height: 1;
+      font-weight: 300;
       padding: 26px 22px 24px;
       border-radius: 50px;
       border: 1px solid #4f699b;
@@ -133,6 +137,7 @@ body {
     position: absolute;
     width: 100%;
     z-index: 1;
+    font-weight: 600;
     .btn {
       margin-left: 60px;
     }
@@ -251,23 +256,20 @@ body {
   &__info {
     margin-top: 80px;
     padding-left: 40px;
-    max-width: 500px;
     &-text {
+      max-width: 600px;
       span {
         display: inline-block;
         padding-top: 20px;
       }
       ul {
         margin: 25px 0;
-        padding-left: 1em;
+        padding-left: 1.1em;
         li {
           line-height: 24px;
-          margin-bottom: 15px;
+          padding-bottom: 15px;
         }
       }
-    }
-    &-btn {
-      padding-top: 20px;
     }
     .btn:hover {
       padding-left: 48px;
@@ -336,11 +338,14 @@ body {
       margin: 0;
       padding: 0;
     }
+    &-image {
+      padding-top: 30px;
+    }
   }
 
   .item {
     display: flex;
-    max-width: 600px;
+    max-width: 700px;
     padding-left: 60px;
     position: relative;
     &__number {
@@ -367,7 +372,7 @@ body {
         font-size: 24px;
       }
       p {
-        margin: 20px 0;
+        margin: 18px 0;
       }
     }
   }
@@ -387,7 +392,8 @@ body {
   &__info {
     padding-top: 95px;
     padding-left: 33px;
-    max-width: 540px;
+    padding-right: 15px;
+    max-width: 650px;
     &-text {
       ul {
         padding-left: 20px;
@@ -405,7 +411,8 @@ body {
   }
   &-inner {
     text-align: center;
-    padding: 160px 0;
+    padding-top: 160px;
+    padding-bottom: 160px;
   }
   &__title {
     padding-bottom: 1em;
@@ -436,6 +443,7 @@ body {
   }
 
   &__developer {
+    font-weight: 400;
     text-align: center;
     font-size: 14px;
     line-height: 21px;

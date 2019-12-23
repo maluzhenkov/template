@@ -1,1 +1,55 @@
-@import "../fonts/Calibri/stylesheet.css";
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Light.eot");
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Light.svg#CeraRoundPro-Light")
+      format("svg"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Light.ttf") format("truetype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Light.woff") format("woff"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Regular.eot");
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Regular.svg#CeraRoundPro-Regular")
+      format("svg"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Regular.ttf") format("truetype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Regular.woff") format("woff"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Medium.eot");
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Medium.svg#CeraRoundPro-Medium")
+      format("svg"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Medium.ttf") format("truetype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Medium.woff") format("woff"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CeraRoundPro";
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Bold.eot");
+  src: url("../fonts/CeraRoundPro/CeraRoundPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Bold.svg#CeraRoundPro-Bold")
+      format("svg"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Bold.ttf") format("truetype"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Bold.woff") format("woff"),
+    url("../fonts/CeraRoundPro/CeraRoundPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
