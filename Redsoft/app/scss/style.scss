@@ -386,11 +386,13 @@ body {
     padding-bottom: 84px;
   }
   &__image {
+    flex: 0 1 50%;
     img {
       margin-top: -80px;
     }
   }
   &__info {
+    flex: 0 1 50%;
     padding-top: 95px;
     padding-left: 33px;
     padding-right: 15px;
