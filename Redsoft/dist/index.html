@@ -15,7 +15,7 @@
         <header class="promo__header">
           <div class="container header">
             <div class="header__logo">
-              <img src="img/logo-gray.png" alt="Моё здоровье" />
+              <img src="img/logo.png" alt="Моё здоровье" />
             </div>
             <div class="header__nav nav">
               <ul class="nav__list">
@@ -54,10 +54,10 @@
               style="background-image: url(img/slide-1.jpg);"
             ></div>
             <div class="slider__item-inner">
-              <div class="slider__title title">
+              <h2 class="slider__title title">
                 Расширяем возможности предоставления качественных медицинских
                 услуг
-              </div>
+              </h2>
               <div class="slider__text">
                 «Дневник здоровья» – новый сервис для самоконтроля показателей
                 состояния здоровья, разработанный для участников программы «Мое
@@ -76,9 +76,9 @@
               style="background-image: url(img/slide-2.jpg);"
             ></div>
             <div class="slider__item-inner">
-              <div class="slider__title title">
+              <h2 class="slider__title title">
                 Следить за здоровьем станет проще
-              </div>
+              </h2>
               <div class="slider__text">
                 Скоро вы сможете находиться на связи со своим лечащим врачом
                 независимо от своего местоположения, вести дневник мониторинга
@@ -103,12 +103,16 @@
       <div class="account__wrapper">
         <div class="container account-inner">
           <div class="account__image">
-            <img src="img/smart-phone2.png" alt="Дневник здоровья" />
+            <picture>
+              <source type="image/webp" srcset="img/smart-phone.webp" />
+              <source type="image/jpeg" srcset="img/smart-phone.png" />
+              <img src="img/smart-phone.png" alt="Дневник здоровья" />
+            </picture>
           </div>
           <div class="account__info">
-            <div class="account__info-title title">
+            <h2 class="account__info-title title">
               Что такое «Дневник здоровья»?
-            </div>
+            </h2>
             <div class="account__info-text">
               <span>Дневник пациента — это удобный онлайн-сервис:</span>
               <ul>
@@ -142,7 +146,7 @@
     <section id="functions" class="functions">
       <div class="functions__wrapper">
         <div class="container functions-inner">
-          <div class="functions__title title">Функции приложения</div>
+          <h2 class="functions__title title">Функции приложения</h2>
           <div class="functions__items">
             <div class="item">
               <div class="item__icon">
@@ -201,9 +205,9 @@
     <section id="features" class="features">
       <div class="features__wrapper">
         <div class="container-fluid features-inner">
-          <div class="features__title title">
+          <h2 class="features__title title">
             Ведите персональный дневник мониторинга здоровья
-          </div>
+          </h2>
           <div class="features__content">
             <ul class="features__content-list">
               <li class="item">
@@ -249,7 +253,11 @@
               </li>
             </ul>
             <div class="features__content-image">
-              <img src="img/smart-phone-three.png" alt="phones" />
+              <picture>
+                <source type="image/webp" srcset="img/smart-phone-three.webp" />
+                <source type="image/jpeg" srcset="img/smart-phone-three.png" />
+                <img src="img/smart-phone-three.png" alt="phones" />
+              </picture>
             </div>
           </div>
         </div>
@@ -261,12 +269,16 @@
     <section id="spec" class="spec">
       <div class="spec__wrapper">
         <div class="spec__image">
-          <img src="img/tablet.png" alt="Сводка" />
+          <picture>
+            <source type="image/webp" srcset="img/tablet.webp" />
+            <source type="image/jpeg" srcset="img/tablet.png" />
+            <img src="img/tablet.png" alt="Сводка" />
+          </picture>
         </div>
         <div class="spec__info">
-          <div class="spec__info-title title">
+          <h2 class="spec__info-title title">
             Специалистам
-          </div>
+          </h2>
           <div class="spec__info-text">
             <ul>
               <li>
@@ -300,16 +312,16 @@
     <section id="access" class="access">
       <div class="access__wrapper">
         <div class="container access-inner">
-          <div class="access__title title">
+          <h2 class="access__title title">
             Получите бесплатный доступ к «Дневнику здоровья»
-          </div>
+          </h2>
           <div class="access__text">
             Оставьте свою электронную почту <br />и вы узнаете о запуске данного
             сервиса первым!
           </div>
           <form
             id="form-access"
-            action=""
+            action="#"
             method="POST"
             class="access__form form"
           >
@@ -376,7 +388,8 @@
             </button>
           </div>
           <div class="modal__content">
-            <img src="img/icons/check.png" /> Заявка успешно отправленна!
+            <img src="img/icons/check.png" alt="icon" /> Заявка успешно
+            отправленна!
           </div>
         </div>
       </div>
