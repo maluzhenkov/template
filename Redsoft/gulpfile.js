@@ -17,7 +17,8 @@ gulp.task("scss", function() {
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(
       autoprefixer({
-        overrideBrowserslist: ["last 2 versions"]
+        overrideBrowserslist: ["last 2 versions"],
+        cascade: false
       })
     )
     .pipe(rename({ suffix: ".min" }))

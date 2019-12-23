@@ -1,3 +1,5 @@
+$font-display: swap;
+
 @font-face {
   font-family: "CeraRoundPro";
   src: url("../fonts/CeraRoundPro/CeraRoundPro-Light.eot");
@@ -8,9 +10,9 @@
     url("../fonts/CeraRoundPro/CeraRoundPro-Light.ttf") format("truetype"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Light.woff") format("woff"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Light.woff2") format("woff2");
+  font-display: $font-display;
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -23,9 +25,9 @@
     url("../fonts/CeraRoundPro/CeraRoundPro-Regular.ttf") format("truetype"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Regular.woff") format("woff"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Regular.woff2") format("woff2");
+  font-display: $font-display;
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -38,9 +40,9 @@
     url("../fonts/CeraRoundPro/CeraRoundPro-Medium.ttf") format("truetype"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Medium.woff") format("woff"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Medium.woff2") format("woff2");
+  font-display: $font-display;
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -53,7 +55,7 @@
     url("../fonts/CeraRoundPro/CeraRoundPro-Bold.ttf") format("truetype"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Bold.woff") format("woff"),
     url("../fonts/CeraRoundPro/CeraRoundPro-Bold.woff2") format("woff2");
+  font-display: $font-display;
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
