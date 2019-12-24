@@ -38,7 +38,7 @@
                   <a class="nav__link" href="#spec" tabindex="4">Партнеры</a>
                 </li>
               </ul>
-              <a class="btn btn-outline" href="#access" tabindex="5">
+              <a class="btn btn--outline" href="#access" tabindex="5">
                 Оставить заявку
               </a>
             </div>
@@ -64,7 +64,7 @@
                 здоровье».
               </div>
               <div class="slider__button">
-                <a class="btn btn-bg-red" href="#account">
+                <a class="btn btn--bg-red" href="#account">
                   Узнать больше
                 </a>
               </div>
@@ -86,7 +86,7 @@
                 другое.
               </div>
               <div class="slider__button">
-                <a class="btn btn-bg-red" href="#account">
+                <a class="btn btn--bg-red" href="#account">
                   Узнать больше
                 </a>
               </div>
@@ -102,7 +102,11 @@
     <section id="account" class="account">
       <div class="account__wrapper">
         <div class="container account-inner">
-          <div class="account__image">
+          <div
+            class="account__image"
+            data-aos="fade-up-right"
+            data-aos-offset="-200"
+          >
             <picture>
               <source type="image/webp" srcset="img/smart-phone.webp" />
               <source type="image/jpeg" srcset="img/smart-phone.png" />
@@ -132,7 +136,7 @@
               </ul>
             </div>
             <div class="account__info-btn">
-              <a class="btn btn-bg-red" href="#access">
+              <a class="btn btn--bg-red" href="#access">
                 Оставить заявку
               </a>
             </div>
@@ -148,7 +152,7 @@
         <div class="container functions-inner">
           <h2 class="functions__title title">Функции приложения</h2>
           <div class="functions__items">
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/medicine.png" alt="Иконка" />
               </div>
@@ -156,7 +160,7 @@
                 Планирование графика <br />приема лекарств
               </div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/siren.png" alt="Иконка" />
               </div>
@@ -164,13 +168,13 @@
                 Уведомление врача <br />об исполнении назначений
               </div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/health.png" alt="Иконка" />
               </div>
               <div class="item__text">Ведение дневника <br />самочувствия</div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/smartwatch.png" alt="Иконка" />
               </div>
@@ -179,7 +183,7 @@
                 измерений врачу
               </div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/conversation.png" alt="Иконка" />
               </div>
@@ -187,7 +191,7 @@
                 Общение с врачами <br />через встроенный мессенджер
               </div>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up">
               <div class="item__icon">
                 <img src="img/icons/facebook.png" alt="Иконка" />
               </div>
@@ -210,7 +214,7 @@
           </h2>
           <div class="features__content">
             <ul class="features__content-list">
-              <li class="item">
+              <li class="item" data-aos="fade-right">
                 <div class="item__number">1</div>
                 <div class="item__text">
                   <div class="item__text-caption">Хранение данных</div>
@@ -223,7 +227,7 @@
                   </p>
                 </div>
               </li>
-              <li class="item">
+              <li class="item" data-aos="fade-right">
                 <div class="item__number">2</div>
                 <div class="item__text">
                   <div class="item__text-caption">
@@ -238,7 +242,7 @@
                   </p>
                 </div>
               </li>
-              <li class="item">
+              <li class="item" data-aos="fade-right">
                 <div class="item__number">3</div>
                 <div class="item__text">
                   <div class="item__text-caption">Напоминание о важном</div>
@@ -252,7 +256,11 @@
                 </div>
               </li>
             </ul>
-            <div class="features__content-image">
+            <div
+              class="features__content-image"
+              data-aos="flip-left"
+              data-aos-offset="-350"
+            >
               <picture>
                 <source type="image/webp" srcset="img/smart-phone-three.webp" />
                 <source type="image/jpeg" srcset="img/smart-phone-three.png" />
@@ -268,7 +276,7 @@
     <!-- SPECIALISTS -->
     <section id="spec" class="spec">
       <div class="spec__wrapper">
-        <div class="spec__image">
+        <div class="spec__image" data-aos="fade-up" data-aos-offset="-300">
           <picture>
             <source type="image/webp" srcset="img/tablet.webp" />
             <source type="image/jpeg" srcset="img/tablet.png" />
@@ -333,7 +341,7 @@
                 placeholder="Ваш E-mail"
               />
             </div>
-            <button class="btn btn-bg-red" type="submit">Отправить</button>
+            <button class="btn btn--bg-red" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -379,7 +387,7 @@
     <!-- /FOOTER -->
 
     <!-- MODAL -->
-    <section id="modal" class="modal">
+    <div id="modal" class="modal">
       <div class="modal__wrapper">
         <div class="modal-inner">
           <div class="modal__close">
@@ -393,7 +401,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- /MODAL -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

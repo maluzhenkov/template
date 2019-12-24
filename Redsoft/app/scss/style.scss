@@ -49,14 +49,14 @@ body {
     background: rgba($white, 0.2);
   }
 }
-.btn-outline {
+.btn--outline {
   border: 1px solid rgba($white, 0.2);
   transition: border 0.1s ease;
   &:hover {
     border: 1px solid transparent;
   }
 }
-.btn-bg-red {
+.btn--bg-red {
   background: $red;
   &:hover {
     background-color: rgb(201, 0, 90);

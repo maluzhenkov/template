@@ -1,4 +1,8 @@
-$(function() {
+$(document).ready(function() {
+  AOS.init({
+    offset: -600
+  });
+
   $("a[href^='#']").click(function() {
     const href = $(this).attr("href");
     $("html, body").animate({ scrollTop: $(href).offset().top + "px" });
