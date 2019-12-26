@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-inner">
+            <div class="header__logo"><img class="img-logo" src="static/images/svg/logo.svg"/>
+            </div>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item active"> <a class="nav__link" href="">О нас</a></li>
+                <li class="nav__item"> <a class="nav__link" href="">Услуги</a></li>
+                <li class="nav__item"> <a class="nav__link" href="">Вакансии</a></li>
+                <li class="nav__item"> <a class="nav__link" href="">Новости</a></li>
+                <li class="nav__item"> <a class="nav__link" href="">Соглашения</a></li>
+              </ul>
+              <div class="auth">
+                <button class="btn btn-primary--outline">войти</button>
+                <button class="btn btn-primary">зарегистрироваться</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="slider">
+          <div class="slider__item" style="background-image: url(static/images/general/slide-bg-1.jpg)">1</div>
+          <div class="slider__item" style="background-image: url(static/images/general/slide-bg-2.jpg)">2</div>
+          <div class="slider__item" style="background-image: url(static/images/general/slide-bg-3.jpg)">3</div>
+        </div>
+        <div class="content-main">
+          <div class="container content-main-inner">
+            <form class="form" action="#" method="post">
+              <div class="form__header">
+                <div class="form__header-title title">Найдём номера под ваши пожелания</div>
+              </div>
+              <div class="form__body">
+                <div class="datepicker">
+                  <div class="datepicker__group"><span class="datepicker__caption caption">прибытие</span>
+                    <input class="datepicker__dropdown text-field text-field--arrow-dpwn" id="startDate" placeholder="ДД.ММ.ГГГГ" size="1" name="startDate" readonly>
+                  </div>
+                  <div class="datepicker__group"><span class="datepicker__caption caption">выезд</span>
+                    <input class="datepicker__dropdown text-field text-field--arrow-dpwn" id="endDate" placeholder="ДД.ММ.ГГГГ" size="1" name="startDate" readonly>
+                  </div>
+                  <div id="date-range">
+                    <div class="datepicker__footer">
+                      <button class="btn" data-datepicker-clean>Очистить</button>
+                      <button class="btn text-color--purple" data-datepicker-apply>Применить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__footer">
+                <button class="btn btn-primary btn--wide btn--arrow-right">подобрать номер</button>
+              </div>
+            </form><span class="content-main__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</span>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__main">
+          <div class="container"> 
+            <div class="footer__main-inner">
+              <div class="footer__column">
+                <div class="footer__column-logo"><img class="img-logo" src="static/images/svg/logo.svg"/>
+                </div>
+                <p class="footer__column-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+              <div class="footer__column"><span class="footer__column-title caption">навигация</span>
+                <ul class="footer__column-list list">
+                  <li class="list__item"><a class="list__link" href="">О нас</a></li>
+                  <li class="list__item"><a class="list__link" href="">Новости</a></li>
+                  <li class="list__item"><a class="list__link" href="">Служба поддержки</a></li>
+                  <li class="list__item"><a class="list__link" href="">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="footer__column"><span class="footer__column-title caption">о нас</span>
+                <ul class="footer__column-list list">
+                  <li class="list__item"><a class="list__link" href="">О сервисе</a></li>
+                  <li class="list__item"><a class="list__link" href="">Наша команда</a></li>
+                  <li class="list__item"><a class="list__link" href="">Вакансии</a></li>
+                  <li class="list__item"><a class="list__link" href="">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="footer__column"><span class="footer__column-title caption">Служба поддержки</span>
+                <ul class="footer__column-list list">
+                  <li class="list__item"><a class="list__link" href="">Соглашения</a></li>
+                  <li class="list__item"><a class="list__link" href="">Сообщества</a></li>
+                  <li class="list__item"><a class="list__link" href="">Связь с нами</a></li>
+                </ul>
+              </div>
+              <div class="footer__column"><span class="footer__column-title caption">Подписка</span>
+                <p class="footer__column-text">Получайте специальные предложения и новости сервиса</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__under">
+          <div class="container">
+            <div class="footer__under-inner"><span class="footer__copyright_text">Copyright © 2018 Toxin отель. Все права зачищены.</span>
+              <div class="footer__social social"><a class="social__link twitter" href=""><img class="img-twitter" src="static/images/svg/twitter.svg"/></a><a class="social__link fb" href=""><img class="img-fb" src="static/images/svg/fb.svg"/></a><a class="social__link inst" href=""><img class="img-inst" src="static/images/svg/inst.svg"/></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/jquery-ui.min.js"></script>
+    <script src="static/js/jquery.datepicker.extension.range.min.js"></script>
+    <script src="static/js/datepicker-ru.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

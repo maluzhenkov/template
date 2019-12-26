@@ -1,0 +1,19 @@
+.form {
+  width: 380px;
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px 30px 30px 30px;
+  &__header-title {
+    max-width: 305px;
+    margin-bottom: 20px;
+  }
+}
+
+.text-field {
+  padding: 13px 15px;
+  border: 1px solid $dark-25;
+  border-radius: 4px;
+  width: 100%;
+}

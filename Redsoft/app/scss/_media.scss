@@ -1,0 +1,16 @@
+@media (max-width: 1060px) {
+  .header {
+    &__logo {
+      display: none;
+    }
+    &__nav {
+      width: 100%;
+    }
+    &-inner {
+      font-size: 14px;
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+}

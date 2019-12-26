@@ -1,0 +1,32 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$dark-25: rgba(31, 32, 65, 0.25);
+$dark-50: rgba(31, 32, 65, 0.5);
+$dark-75: rgba(31, 32, 65, 0.75);
+$dark-100: #1f2041;
+$purple: #bc9cff;
+
+$gradient-primary: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$gradient-secondary: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
+// Sizes
+$base-font-size: 14px;
+
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1160px;
+
+// Fonts
+$font-quicksand: "Quicksand", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;

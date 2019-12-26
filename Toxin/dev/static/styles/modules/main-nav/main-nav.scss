@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 30px;
+    &.active {
+      color: $dark-75;
+      font-weight: bold;
+    }
+  }
+  .auth {
+    & > *:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

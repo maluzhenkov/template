@@ -1,0 +1,11 @@
+.datepicker
+    .datepicker__group
+        span.datepicker__caption.caption прибытие
+        input(id="startDate" placeholder="ДД.ММ.ГГГГ" size="1" name="startDate" readonly).datepicker__dropdown.text-field.text-field--arrow-dpwn
+    .datepicker__group
+        span.datepicker__caption.caption выезд
+        input(id="endDate" placeholder="ДД.ММ.ГГГГ" size="1" name="startDate" readonly).datepicker__dropdown.text-field.text-field--arrow-dpwn
+    div(id="date-range")
+        .datepicker__footer
+            button(data-datepicker-clean).btn Очистить
+            button(data-datepicker-apply).btn.text-color--purple Применить

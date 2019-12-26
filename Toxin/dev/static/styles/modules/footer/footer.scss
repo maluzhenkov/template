@@ -1,0 +1,29 @@
+footer {
+  flex: 0 0 auto;
+}
+
+.footer {
+  &__main {
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  }
+  &__main-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+  }
+  &__column {
+    max-width: 260px;
+    &-logo {
+      margin-bottom: 20px;
+    }
+    &-title {
+      margin-bottom: 20px;
+    }
+  }
+  &__under-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+  }
+}

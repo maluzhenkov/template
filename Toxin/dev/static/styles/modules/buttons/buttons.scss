@@ -1,0 +1,47 @@
+.btn {
+  position: relative;
+  border: 2px solid transparent;
+  font-family: $font-montserrat;
+  padding: 0;
+  font-weight: bold;
+  border-radius: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  color: $dark-50;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.btn-primary {
+  background: $gradient-primary;
+  padding: 10px 20px;
+  color: $white;
+  &--outline {
+    padding: 10px 20px;
+    border-color: $purple;
+    color: $purple;
+  }
+}
+
+.btn--wide {
+  width: 100%;
+}
+.btn--arrow-right {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-image: url(../images/svg/arrow_forward.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-size: cover;
+  }
+}

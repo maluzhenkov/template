@@ -1,0 +1,42 @@
+.title {
+  font-family: $font-quicksand;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $dark-100;
+}
+
+.caption {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark-100;
+}
+
+.list {
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__link {
+    line-height: 17px;
+  }
+}
+
+.social {
+  display: flex;
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include size(24px);
+  }
+  & > *:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.text-color--purple {
+  color: $purple !important;
+}

@@ -20,7 +20,6 @@ $(document).ready(function() {
   });
 
   $('button[type="submit"]').click(function(e) {
-    // e.preventDefault();
     /*Валидация полей формы*/
     $("#form-access").validate({
       //Правила валидации

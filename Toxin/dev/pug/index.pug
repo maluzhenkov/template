@@ -1,0 +1,11 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+
+block content
+	include modules/slider/slider-main
+	.content-main
+		.container.content-main-inner
+			include modules/form/form-search-number
+			span.content-main__text Лучшие номера для вашей работы, отдыха и просто вдохновения

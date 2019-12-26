@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   font-family: "CeraRoundPro", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -126,31 +127,34 @@ body {
   }
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .btn {
+    margin-left: 60px;
+  }
+  .nav__link:hover:after {
+    display: block;
+  }
+}
+
 .promo {
+  display: flex;
+  justify-content: center;
   color: $white;
   &__wrapper {
     position: relative;
     overflow: hidden;
     border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
-  }
-  &__header {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    font-weight: 600;
-    .btn {
-      margin-left: 60px;
-    }
-    .nav__link:hover:after {
-      display: block;
-    }
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    align-items: center;
   }
 
   .slider {
@@ -187,7 +191,9 @@ body {
       }
       &-inner {
         text-align: center;
-        max-width: 800px;
+        max-width: 830px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin: 0 auto;
       }
     }

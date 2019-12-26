@@ -1,0 +1,171 @@
+.datepicker {
+  position: relative;
+  display: flex;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+  .hasDatepicker {
+    display: none;
+    position: absolute;
+    top: 64px;
+    z-index: 5;
+    margin-top: 6px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px 30px;
+    width: 100%;
+  }
+
+  .ui-datepicker .selected-start,
+  .ui-datepicker .selected-end {
+    background: $gradient-primary;
+    border-radius: 22px;
+    font-weight: bold;
+    color: $white;
+  }
+
+  .ui-datepicker .selected.first-of-month:not(.selected-start) a {
+    border-left: 2px dotted #d4e7f6;
+    padding-left: 1px;
+  }
+
+  .ui-datepicker .selected.last-of-month:not(.selected-end) a {
+    border-right: 2px dotted #d4e7f6;
+    padding-right: 1px;
+  }
+  .ui-datepicker td .ui-state-active {
+    background-color: rgba($purple, 0.25);
+  }
+
+  .ui-datepicker .selected-start .ui-state-active {
+    background: linear-gradient(
+      90deg,
+      transparent 49%,
+      rgba($purple, 0.25) 50%,
+      rgba($purple, 0.25) 100%
+    );
+  }
+  .ui-datepicker .selected-end .ui-state-active {
+    background: linear-gradient(
+      -90deg,
+      transparent 49%,
+      rgba($purple, 0.25) 50%,
+      rgba($purple, 0.25) 100%
+    );
+  }
+
+  .ui-datepicker .selected-start.selected-end .ui-state-active {
+    background: none;
+  }
+}
+.ui-datepicker {
+  user-select: none;
+  width: 320px;
+  padding: 20px 20px 37px;
+  border: 1px solid $dark-25;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+
+    color: $dark-100;
+    order: 2;
+    line-height: 24px;
+  }
+
+  &-prev,
+  &-next {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  &-next {
+    order: 3;
+  }
+
+  &-prev:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: #000;
+    background-image: url(../images/svg/arrow_forward-primary.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-180deg);
+  }
+
+  &-next:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: #000;
+    background-image: url(../images/svg/arrow_forward-primary.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  & table {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+  & th {
+    width: 40px;
+    height: 40px;
+    color: $purple;
+  }
+  & td {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+  & td span,
+  & td a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: inherit;
+  }
+  &-unselectable {
+    color: $dark-25;
+  }
+
+  &-today {
+    background: $gradient-secondary;
+    border-radius: 22px;
+    font-weight: bold;
+    color: $white;
+  }
+  &-current-day {
+    background: $gradient-secondary;
+    border-radius: 22px;
+    font-weight: bold;
+    color: $white;
+  }
+}
