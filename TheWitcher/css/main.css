@@ -1,0 +1,456 @@
+@font-face {
+  font-family: "MasonChronicles";
+  src: url("../fonts/MasonChronicles/MasonChronicles.eot");
+  src: local("☺"),
+    url("../fonts/MasonChronicles/MasonChronicles.woff") format("woff"),
+    url("../fonts/MasonChronicles/MasonChronicles.ttf") format("truetype"),
+    url("../fonts/MasonChronicles/MasonChronicles.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #141218;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top right 20%;
+  z-index: 0;
+}
+.gradient::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0) 59.28%, #141218 100%),
+    linear-gradient(270deg, #141218 3.38%, rgba(20, 18, 24, 0) 10.43%),
+    linear-gradient(179.45deg, #141218 0.55%, rgba(20, 18, 24, 0) 8.71%),
+    radial-gradient(
+      45.78% 65.62% at 72.8% 56.48%,
+      rgba(20, 18, 24, 0.33) 19.93%,
+      #141218 100%
+    );
+  z-index: -1;
+}
+.container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.video {
+  transform: translateX(15%);
+  position: absolute;
+  visibility: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+}
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu-toggle {
+  z-index: 3;
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+}
+.menu-toggle:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  margin-top: 7px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+.menu-toggle:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  margin-top: -7px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle-active {
+  background: transparent;
+}
+.menu-toggle-active:before {
+  transform: rotate(45deg);
+  margin-top: 0;
+}
+.menu-toggle-active:after {
+  transform: rotate(-45deg);
+  margin-top: 0;
+}
+.menu-toggle:focus {
+  outline: none;
+}
+
+.menu-list {
+  margin-right: auto;
+  margin-left: 67px;
+}
+
+.menu-link {
+  position: relative;
+  margin-right: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu-link:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #9d2929;
+  transition: width 0.5s ease-in-out;
+}
+
+.social-link {
+  user-select: none;
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-content {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 85px;
+}
+.main-title {
+  font-family: "MasonChronicles", sans-serif;
+  font-size: 76px;
+  line-height: 89px;
+  margin-bottom: 10px;
+  animation-delay: 0.5s;
+}
+.main-description {
+  max-width: 458px;
+  line-height: 150%;
+  margin-bottom: 40px;
+  animation-delay: 0.7s;
+}
+.main-button {
+  user-select: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  background-color: #9d2929;
+  padding: 22px 72px;
+  animation-delay: 1s;
+}
+
+.genre {
+  display: inline-block;
+  margin-bottom: 16px;
+  animation-delay: 0.1s;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  animation-delay: 0.3s;
+}
+.rating-stars {
+  user-select: none;
+}
+.rating-number {
+  font-size: 12px;
+  margin-left: 9px;
+}
+
+.play {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #9d2929;
+  border-radius: 50%;
+  border: none;
+  animation-delay: 1.5s;
+}
+.play:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: #9d2929;
+}
+.play-img {
+  position: relative;
+  transform: translateX(5px);
+}
+
+/* SLIDER */
+.swiper-container {
+  max-width: 420px;
+  padding: 0 0 5px 2px;
+  margin: 0;
+}
+
+.slider-series {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  animation-delay: 1.5s;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 13px;
+  width: 180px;
+  height: 101px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-left: 2px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.card:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 18, 24, 0.5) 0%,
+    rgba(45, 45, 45, 1) 100%
+  );
+}
+
+.card-subtitle {
+  position: relative;
+  font-size: 10px;
+  line-height: 12px;
+}
+.card-title {
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.arrow {
+  width: 32px;
+  height: 23px;
+  border: none;
+  background-image: url(../images/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+/* FOOTER */
+.footer {
+  z-index: 1;
+  background-color: #141218;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer-menu-link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 40px;
+  }
+  .wrapper {
+    background-position: top right 50%;
+  }
+  .play {
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+
+  .footer-menu-link:first-child {
+    margin-left: 0;
+  }
+  .footer-menu-link {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-content {
+    margin-bottom: 40px;
+  }
+  .main-title {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  .main-description {
+    margin-bottom: 25px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #9d2929;
+  }
+  .menu-active {
+    display: flex;
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .menu-link {
+    margin: 0;
+    padding: 30px;
+    font-size: 24px;
+    font-family: "MasonChronicles", sans-serif;
+  }
+  .social {
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .social-link:first-child {
+    margin-left: 0;
+  }
+
+  .swiper-container {
+    max-width: 210px;
+  }
+  .footer-menu {
+    margin-top: 8px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .play:before {
+    animation: playAnim 2s ease-out infinite;
+  }
+  @keyframes playAnim {
+    80% {
+      opacity: 0.5;
+    }
+    100% {
+      width: 132px;
+      height: 132px;
+      opacity: 0;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .card:hover:before {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 18, 24, 0) 0%,
+      rgba(45, 45, 45, 1) 100%
+    );
+  }
+  .main-button:hover {
+    box-shadow: 0 4px 4px rgba(68, 9, 9, 0.8);
+    transform: translateY(-1px);
+  }
+  .menu-link:hover:before {
+    width: 100%;
+  }
+  .footer-menu-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
