@@ -23,6 +23,8 @@ menuButton.addEventListener("click", handlerMenuToggle);
 
 window.onload = function() {
   if (window.innerWidth >= 768) {
+    const audio = document.querySelector("audio");
+    audio.volume = 0.05;
     const play = document.querySelector(".play");
     play.style.display = "flex";
     play.addEventListener("click", e => {
