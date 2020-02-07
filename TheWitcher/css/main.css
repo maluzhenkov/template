@@ -54,7 +54,7 @@ body {
   z-index: -1;
 }
 .container {
-  width: 96%;
+  width: 94%;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -140,6 +140,7 @@ body {
 }
 
 .menu-list {
+  display: flex;
   margin-right: auto;
   margin-left: 67px;
 }
@@ -327,6 +328,9 @@ body {
 }
 .copyright {
   color: rgba(255, 255, 255, 0.4);
+}
+.footer-menu {
+  display: flex;
 }
 .footer-menu-link {
   display: inline-block;
