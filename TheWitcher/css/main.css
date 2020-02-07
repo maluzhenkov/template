@@ -32,7 +32,7 @@ body {
   overflow: hidden;
   position: relative;
   flex-grow: 1;
-  background-image: url(../images/main-bg.jpg);
+  background-image: url(../images/main-bg.webp);
   background-repeat: no-repeat;
   background-position: top right 20%;
   z-index: 0;
@@ -54,6 +54,7 @@ body {
     );
   z-index: -1;
 }
+
 .container {
   width: 94%;
   max-width: 1140px;
