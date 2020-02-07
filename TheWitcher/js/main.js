@@ -28,6 +28,7 @@ window.onload = function() {
     const play = document.querySelector(".play");
     play.style.display = "flex";
     play.addEventListener("click", e => {
+      audio.play();
       const video = document.querySelector(".video");
       play.style.display = "none";
       video.style.visibility = "visible";
